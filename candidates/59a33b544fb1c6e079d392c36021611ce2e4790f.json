@@ -1,0 +1,82 @@
+{
+  "source_code_url": "https://github.com/ChALkeR/safer-buffer/",
+  "commit": {
+    "id": "59a33b544fb1c6e079d392c36021611ce2e4790f",
+    "author": {
+      "name": "Сковорода Никита Андреевич",
+      "email": "chalkerx@gmail.com"
+    },
+    "date": "Mon Mar 19 12:39:08 2018 +0300",
+    "message": "Implement size >= 0 check"
+  },
+  "diff": [
+    {
+      "file": {
+        "from": "a/dangerous.js",
+        "to": "b/dangerous.js"
+      },
+      "index": {
+        "from": "ce81cbf",
+        "to": "7d268fa"
+      },
+      "mode": "100644",
+      "changes": [
+        {
+          "lines": {
+            "from": 36,
+            "to": 36
+          },
+          "content": {
+            "old": [],
+            "new": [
+              "if (size < 0) {",
+              "  throw new RangeError('The value \"' + size + '\" is invalid for option \"size\"')",
+              "}"
+            ]
+          }
+        },
+        {
+          "lines": {
+            "from": 45,
+            "to": 48
+          },
+          "content": {
+            "old": [],
+            "new": [
+              "if (size < 0) {",
+              "  throw new RangeError('The value \"' + size + '\" is invalid for option \"size\"')",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file": {
+        "from": "a/safer.js",
+        "to": "b/safer.js"
+      },
+      "index": {
+        "from": "81aab3a",
+        "to": "482421e"
+      },
+      "mode": "100644",
+      "changes": [
+        {
+          "lines": {
+            "from": 36,
+            "to": 36
+          },
+          "content": {
+            "old": [],
+            "new": [
+              "if (size < 0) {",
+              "  throw new RangeError('The value \"' + size + '\" is invalid for option \"size\"')",
+              "}"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
